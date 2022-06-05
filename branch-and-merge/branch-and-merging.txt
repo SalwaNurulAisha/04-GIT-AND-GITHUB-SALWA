@@ -1,0 +1,39 @@
+Answer the following questions
+
+1. What does git clean do?
+   =>git clean is a convenience method for deleting untracked files in a repo's working directory.
+     Untracked files are those that are in the repo's directory but have not yet been added to
+     the repo's index with git add .
+
+2. What do the -d and -f flags for git clean do?
+   =>to remove untracked directories
+
+3. What git command creates a branch?
+   =>git branch <name branch>
+
+4. What is the difference between a fast-forward and recursive merge?
+   =>fast forward merge you have a straight line of history and with the recursive merge,
+     it is of multiple lines.
+
+5. What git command changes to another branch?
+   =>git checkout <name branch>
+
+6. How do you remove modified or deleted files from the working directory?
+   =>use command rm (remove)
+
+7. What git command deletes a branch?
+   =>git branch -d <name branch>
+
+8. What does the git diff command do?
+   =>git diff is a multi-use Git command that when executed runs a diff function on 
+     Git data sources. These data sources can be commits, branches, files and more.
+
+9. How do you remove files from the staging area?
+   =>you can unstage files from the index using
+        git reset HEAD -- pasth/to/file
+     just like git add, you can unstage files recursively by directory and so forth,
+     so to unstage everything at once, run this from the root directory of your repository :
+        git reset HEAD --
+
+10. How do merge conflicts happen?
+    =>when git is unable to automatically resolve differences in code between two commits.
